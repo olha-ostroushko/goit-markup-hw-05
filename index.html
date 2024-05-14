@@ -536,7 +536,7 @@
             <label class="review-form-field-label" for="user-phone"
               >Phone</label
             >
-            <div class="review-form-field-wrapper">
+            <div class="reveiw-form-input-wrapper">
               <input
                 class="review-form-field-input"
                 id="user-phone"
@@ -555,16 +555,18 @@
             <label class="review-form-field-label" for="user-email"
               >Email</label
             >
-            <input
-              class="review-form-field-input"
-              id="user-email"
-              type="email"
-              name="user-email"
-              required
-            />
-            <svg class="review-form-field-icon" width="16" height="12">
-              <use href="./images/icons.svg"></use>
-            </svg>
+            <div class="reveiw-form-input-wrapper">
+              <input
+                class="review-form-field-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+                required
+              />
+              <svg class="review-form-field-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
           <div
             class="review-form-field-wrapper review-form-field-wrapper-comment"
@@ -573,24 +575,33 @@
               >Comment</label
             >
             <textarea
-              class="eview-form-field-massege"
+              class="review-form-field-massege"
               id="user-comment"
               name="user-comment"
               required
+              placeholder="Text input"
             ></textarea>
           </div>
           <div class="review-form-checkbox-wrapper">
             <input
-              class="review-form-checkbox-input"
+              class="review-form-checkbox visually-hidden"
               type="checkbox"
               id="privacy-policy"
               name="privacy-policy"
               value="true"
               required
             />
-            <label class="review-form-checkbox-label" for="privacy-policy"
-              >I accept the terms and conditions of the
-              <a href="" class="privacy-policy-link">Privacy Policy</a></label
+            <label class="review-form-checkbox-label" for="privacy-policy">
+              <span class="review-form-own-checkbox"
+                ><svg
+                  class="review-form-own-checkbox-icon"
+                  width="10"
+                  height="8"
+                >
+                  <use href="./images/icons.svg#icon-vector-click"></use></svg
+              ></span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a></label
             >
           </div>
           <button class="review-form-submit" type="submit">Send</button>
