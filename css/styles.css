@@ -481,11 +481,11 @@ color: #2e2f42;
 }
 .subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-label {
-  gap: 24px;
-  
+  gap: 24px;  
 }
 
 .ubscribe-input-email{
@@ -502,6 +502,8 @@ color: #2e2f42;
   color: #ffffff;
 
 }
+
+.icon-subscribe-button {margin-left: 16px;}
 
 .ubscribe-input-email::placeholder {
 color #ffffff;
